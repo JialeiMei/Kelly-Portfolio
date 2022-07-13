@@ -443,7 +443,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .proj_tick {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     margin-top: 10rem;
     justify-content: space-between;
    
@@ -507,8 +507,12 @@ body:not(.user-is-tabbing) a:focus {
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+.work__list__noFlex {
+    list-style-position: inside;
 }
 
 .work__list li {
@@ -656,3 +660,38 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.tabTitle {
+    color: #ff3258;
+    opacity: 70%;
+    border-bottom: 0.5px solid white;
+    margin-top: 20px;
+}
+
+.tablinks {
+    color: #ff3258;
+    border: none;
+    background: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: var(--line-height-small);
+    font-size: var(--font-size-large);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.gird-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+

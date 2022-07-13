@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,10 +13,10 @@
     Kelly Mei | A Frontend Developer.
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="">
 
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="../Kelly-Portfolio/index.css" />
 </head>
 
 <body>
@@ -45,7 +45,7 @@
           <span>Kelly Mei</span>
         </h1>
         <p>A Web designer, Web developer, Mobile prototype design and UI designer.</p>
-        <p style="font-size: 0.9em;">I design and code beautifully simple things and I love what I do</p>
+        <p style="font-size: 0.9em;">I design and code beautifully simple things, and I love what I do</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -58,195 +58,479 @@
     <section class="work" id="work">
       <div class="row">
         <h2>My Work</h2>
-        <h3 style="color: #ff3258; opacity: 70%; border-bottom: 0.5px solid white">Mobile Prototype & UI Design & Animation Design</h3>
-        <p style="margin: 2em;">
-          A mobile app prototype is a preliminary visual mock-up that looks like a real app, and demonstrates an app’s fundamental design and function but does not contain working code. 
-        </p>
+        <div class="tab">
+          <button class="tablinks" onselect="ui-design" onclick="openCity(event, 'ui-design')">UI Design</button>
+          <button class="tablinks" onclick="openCity(event, 'react')">React</button>
+          <button class="tablinks" onclick="openCity(event, 'vue')">Vue</button>
+          <button class="tablinks" onclick="openCity(event, 'html-css')">Other</button>
+        </div>
 
-        <div class="proj_tick">
-          <div class="tick_info">
-            <h3><em>Tickitin Mobile Application</em></h3>
-            <p> 
-              This is an interactive mockup / high-fidelity digital prototype of a mobile app for Tickitin company. 
-              It is a platform that combines buying tickets and socializing. 
-            </p> 
-            <p>
-               I designed and implemented the production of the entire application. 
-               Even though the screens are just images,so you can’t type in fields, use the GPS or camera, etc. 
-               But it allows you to go further than a few images, into things like creating links between screens or making a small area of an image clickable, scrollable and viewable on your mobile device just like a real app.
-            </p> 
-            <p>* You can play with it in Flinto App.</p>
-            The software/language I used
-            <ul class="work__list " >
-              <li>Photoshop</li>
-              <li>Flinto</li>
-              <li>Sketch</li>
-            </ul>
-            Description from left to right, top to bottom.
-            <ol style=" list-style-position: inside;">
-              <li>Home page and filtered everent page.</li>
-              <li>Different tabs in event page.</li> 
-              <li>Profile for user and influencer.</li>
-              <li>Contact and chat (single & group).</li>
-              <li>User rewards, VIP level.</li>
-              <li>Cart page.</li>
-            </ol>
+        <!-- ***** Ui Design ***** -->
+        <div id="ui-design" class="tabcontent">
+
+          <h3 class="tabTitle">Mobile Prototype & UI Design & Animation Design</h3>
+          <p style="margin: 2em;">
+            A mobile app prototype is a preliminary visual mock-up that looks like a real app, and demonstrates an app’s fundamental design and function but does not contain working code.
+          </p>
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Tickitin Mobile Application</em></h3>
+              <p>
+                This is an interactive mockup / high-fidelity digital prototype of a mobile app for Tickitin company.
+                It is a platform that combines buying tickets and socializing.
+              </p>
+              <p>
+                 I designed and implemented the production of the entire application.
+                 Even though the screens are just images,so you can’t type in fields, use the GPS or camera, etc.
+                 But it allows you to go further than a few images, into things like creating links between screens or making a small area of an image clickable, scrollable and viewable on your mobile device just like a real app.
+              </p>
+              <p>* You can play with it in Flinto App.</p>
+              The software/language I used
+              <ul class="work__list " >
+                <li>Photoshop</li>
+                <li>Flinto</li>
+                <li>Sketch</li>
+              </ul>
+              Description from left to right, top to bottom.
+              <ol style=" list-style-position: inside;">
+                <li>Home page and filtered event page.</li>
+                <li>Different tabs in event page.</li>
+                <li>Profile for user and influencer.</li>
+                <li>Contact and chat (single & group).</li>
+                <li>User rewards, VIP level.</li>
+                <li>Cart page.</li>
+              </ol>
+            </div>
+
+            <div class="tick_content">
+                <img class="project-image" src="images/ui/tick/tick1.gif" alt="project" />
+                <img class="project-image" src="images/ui/tick/tick2.gif" alt="project" />
+                <img class="project-image" src="images/ui/tick/tick3.gif" alt="project" />
+                <img class="project-image" src="images/ui/tick/tick4.gif" alt="project" />
+                <img class="project-image" src="images/ui/tick/tick5.gif" alt="project" />
+                <img class="project-image" src="images/ui/tick/tick6.gif" alt="project" />
+            </div>
           </div>
-        
-          <div class="tick_content">
-              <img class="project-image" src="images/tick1.gif" alt="project" />
-              <img class="project-image" src="images/tick2.gif" alt="project" />
-              <img class="project-image" src="images/tick3.gif" alt="project" />
-              <img class="project-image" src="images/tick4.gif" alt="project" />
-              <img class="project-image" src="images/tick5.gif" alt="project" />
-              <img class="project-image" src="images/tick6.gif" alt="project" />
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>User Walk-through</em></h3>
+                  <p>
+                    This is a walk-through UI for Tickitin company.
+                  </p>
+                  <p>Product Walk-through are interactive experiences that take the user through the steps they need to take in
+                    order to complete key tasks within the product.
+                  </p>
+
+                  It has 4 UI tabs for this walk-through
+                  <ol style=" list-style-position: inside;">
+                    <li>Tell us what you love</li>
+                    <li>Find somebody</li>
+                    <li>Make the payment</li>
+                    <li>Welcome</li>
+                  </ol>
+
+                  <p>* You can play with it in Flinto App.</p>
+                  <p>The software/language I used</p>
+                  <ul class="work__list">
+                    <li>Photoshop</li>
+                    <li>Flinto</li>
+                    <li>Sketch</li>
+                  </ul>
+            </div>
+
+            <div style="text-align: end;">
+
+                <img class="project-image" style="width: 350px" src="images/ui/walkthrough.gif" alt="project" />
+            </div>
+          </div>
+          <div class="proj_tick">
+
+            <div class="tick_info">
+              <h3><em>User Login Loading</em></h3>
+                  <p>
+                    This is a reactive after loading animation Design.
+                  </p>
+
+                  <p>* You can play with it in Flinto App.</p>
+                  <p>The software/language I used</p>
+                  <ul class="work__list">
+                    <li>Photoshop</li>
+                    <li>Flinto</li>
+                    <li>Sketch</li>
+                  </ul>
+            </div>
+
+            <div style="text-align: end;">
+
+                <img class="project-image" style="width: 350px" src="images/ui/login.gif" alt="project" />
+            </div>
+          </div>
+          <div class="proj_tick" style="margin-bottom: 10rem">
+
+            <div class="tick_info" >
+              <h3><em>Product Menu Animation</em></h3>
+                  <p>
+                    This is an animation that jumps from detail page to product page by clicking the menu bar with flips effect.
+                  </p>
+
+                  <p>The software/language I used</p>
+                  <ul class="work__list">
+                    <li>Adobe After Effects</li>
+                    <li>Photoshop</li>
+
+                  </ul>
+            </div>
+
+            <div style="text-align: end;">
+
+                <img class="project-image" style="width: 350px" src="images/ui/Menu.gif" alt="project" />
+            </div>
+          </div>
+
+          <h3 style="color: #ff3258; opacity: 70%; border-bottom: 0.5px solid white">Web Prototype & UI Design & Animation Design</h3>
+
+          <div class="proj_tick">
+
+            <div class="tick_info">
+              <h3><em>Wedding Web Design</em></h3>
+                  <p>
+                    This is a wedding website includes the schedule of events, locations for those events,
+                    travel info, dress code details, accommodations, registry, some images of the couple and their love story.
+
+                  </p>
+
+                  <p>* You can play with it in Flinto App.</p>
+                  <p>The software/language I used</p>
+                  <ul class="work__list">
+                    <li>Photoshop</li>
+                    <li>Flinto</li>
+                    <li>Sketch</li>
+                  </ul>
+            </div>
+
+            <div style="text-align: end;">
+                <img class="project-image" style="width: 550px" src="images/ui/wedding.gif" alt="project" />
+            </div>
+          </div>
+          <div class="proj_tick">
+
+            <div class="tick_info">
+              <h3><em>Parallax Effect</em></h3>
+                  <p>
+                    This is a technique involves designing the background of a website
+                    layout to move at a slower rate than the foreground when the user scrolls, creating a 3D-like effect.
+                  </p>
+
+                  <p>* You can play with it in Flinto App.</p>
+                  <p>The software/language I used</p>
+                  <ul class="work__list">
+                    <li>Photoshop</li>
+                    <li>Flinto</li>
+                    <li>Sketch</li>
+                  </ul>
+            </div>
+
+            <div style="text-align: end;">
+
+                <img class="project-image" style="width: 550px" src="images/ui/parallax.gif" alt="project" />
+            </div>
+          </div>
+
+          <h3 style="color: #ff3258; opacity: 70%; border-bottom: 0.5px solid white; margin-top: 10rem">Plain Web Design</h3>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 10rem">
+              <div>
+                  <img class="project-image" style="width: 600px; height: 400px" src="images/ui/Nike%20(1).png" alt="project" />
+              </div>
+              <div>
+                <img class="project-image" style="width: 500px; height: 400px" src="images/ui/netflix.png" alt="project" />
+              </div>
           </div>
         </div>
 
-        <div class="proj_tick">
 
-          <div class="tick_info">
-            <h3><em>User Walkthrough</em></h3>
-                <p>
-                  This is an walkthrough UI for Tickitin company.  
-                </p>
-                <p>Product Walkthroughs are interactive experiences that take the user through the steps they need to take in 
-                  order to complete key tasks within the product.
-                </p>
+        <div id="react" class="tabcontent">
+          <h3 class="tabTitle">React Project</h3>
+          <p style="margin: 2em;">
+            Project was built with React framework, a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.
+          </p>
 
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Quiz Application</em></h3>
+              <p>A base quiz application built with React.js with</p>
+              <ul style=" list-style-position: inside; list-style-type: circle;">
+                <li>Components</li>
+                <li>State & props(useState)</li>
+                <li>Side effect(useEffect)</li>
+                <li>local storage</li>
+                <li>Http request(Vue-resource)</li>
+              </ul>
+              <p>
+                Quiz App that access trivia questions from the <em>Open Trivia Database API</em>. Multiple game options like difficulty and category are available for the player to change.
+              </p>
+              <p>
+                When quiz finished, you get a score, and you see which questions you answered correctly, and if you answered incorrectly the correct answer is displayed. Also the "check answers" button switches to the "play again" button, so you can start a new quiz.
+              </p>
 
-                It has 4 UI tabs for this walkthrough
-                <ol style=" list-style-position: inside;">
-                  <li>Tell us what you love</li>
-                  <li>Find somebody</li>
-                  <li>Make the payment</li>
-                  <li>Welcome</li>
-                </ol>
+              The software/language I used
+              <ul class="work__list " >
+                <li>React</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
 
-  
+            </div>
 
-                <p>* You can play with it in Flinto App.</p>
-                <p>The software/language I used</p>
-                <ul class="work__list">
-                  <li>Photoshop</li>
-                  <li>Flinto</li>
-                  <li>Sketch</li>
-                </ul>
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/react/reactQuiz.gif" alt="project" />
+            </div>
           </div>
-        
-          <div style="text-align: end;">
-             
-              <img class="project-image" style="width: 350px" src="images/walkthrough.gif" alt="project" />
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Business Card Maker Application</em></h3>
+              <p>A base card maker application built with React.js with</p>
+              <p>
+                Build your own business card by filling your information on form, uploading your profile photo, and your social media account that could be shared or contact with.
+                The information you entered will bind with the state/prop. it will automatically update and display on UI.
+              </p>
+
+              The software/language I used
+              <ul class="work__list " >
+                <li>React</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/react/reactBusinessCard.gif" alt="project" />
+            </div>
           </div>
-        </div>
-        <div class="proj_tick">
 
-          <div class="tick_info">
-            <h3><em>User Login Loading</em></h3>
-                <p>
-                  This is a reative after loading animation Design.  
-                </p>
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Travel Journal Application</em></h3>
+              <p>
+                A base Travel Journal application built with Vue.js with
+              </p>
+              <p>
+                It is `Airbnb-like` website, that displays the home that you could book during your vacation. It also displays the country/place with date and description you have gone to.
+              </p>
 
-                <p>* You can play with it in Flinto App.</p>
-                <p>The software/language I used</p>
-                <ul class="work__list">
-                  <li>Photoshop</li>
-                  <li>Flinto</li>
-                  <li>Sketch</li>
-                </ul>
+              The software/language I used
+              <ul class="work__list " >
+                <li>React</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/react/reactTravelJournal.gif" alt="project" />
+            </div>
           </div>
-        
-          <div style="text-align: end;">
-             
-              <img class="project-image" style="width: 350px" src="images/login.gif" alt="project" />
-          </div>
-        </div>
-        <div class="proj_tick" style="margin-bottom: 10rem">
 
-          <div class="tick_info" >
-            <h3><em>Product Menu Animation</em></h3>
-                <p>
-                  This is an animation that jumps from detail page to product page by clicking the menu bar with flips effect. 
-                </p>
-
-                <p>The software/language I used</p>
-                <ul class="work__list">
-                  <li>Adobe After Effects</li>
-                  <li>Photoshop</li>
-                 
-                </ul>
-          </div>
-        
-          <div style="text-align: end;">
-             
-              <img class="project-image" style="width: 350px" src="images/Menu.gif" alt="project" />
-          </div>
-        </div>
-
-        <h3 style="color: #ff3258; opacity: 70%; border-bottom: 0.5px solid white">Web Prototype & UI Design & Animation Design</h3>
-
-        <div class="proj_tick">
-
-          <div class="tick_info">
-            <h3><em>Wedding Web Design</em></h3>
-                <p>
-                  This is a wedding website includes the schedule of events, locations for those events, 
-                  travel info, dress code details, accommodations, registry, some images of the couple and their love story. 
-                  
-                </p>
-
-                <p>* You can play with it in Flinto App.</p>
-                <p>The software/language I used</p>
-                <ul class="work__list">
-                  <li>Photoshop</li>
-                  <li>Flinto</li>
-                  <li>Sketch</li>
-                </ul>
-          </div>
-        
-          <div style="text-align: end;">
-             
-              <img class="project-image" style="width: 550px" src="images/wedding.gif" alt="project" />
-          </div>
-        </div>
-        <div class="proj_tick">
-
-          <div class="tick_info">
-            <h3><em>Parallax Effect</em></h3>
-                <p>
-                  This is a technique involves designing the background of a website 
-                  layout to move at a slower rate than the foreground when the user scrolls, creating a 3D-like effect. 
-                </p>
-
-                <p>* You can play with it in Flinto App.</p>
-                <p>The software/language I used</p>
-                <ul class="work__list">
-                  <li>Photoshop</li>
-                  <li>Flinto</li>
-                  <li>Sketch</li>
-                </ul>
-          </div>
-        
-          <div style="text-align: end;">
-             
-              <img class="project-image" style="width: 550px" src="images/parallax.gif" alt="project" />
-          </div>
         </div>
 
-        <h3 style="color: #ff3258; opacity: 70%; border-bottom: 0.5px solid white; margin-top: 10rem">Plain Web Design</h3>
-          
-          <div style="display: flex; flex-wrap: row; justify-content: space-around; margin-top: 10rem">
+        <!-- ***** Vue ***** -->
+        <div id="vue" class="tabcontent">
+          <h3 class="tabTitle">Vue Project</h3>
+          <p style="margin: 2em;">
+            Project was built with Vue framework, a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.
+          </p>
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Old version of my portfolio</em></h3>
+              <p>
+                Old version of my portfolio built with Vue.js with
+              </p>
+
+              <ul style=" list-style-position: inside; list-style-type: circle;">
+                <li>Animation(Animate.css & Csshake)</li>
+                <li>UI Framework(Quasar)</li>
+                <li>Components</li>
+                <li>Routing(Vue-router)</li>
+                <li>Deploy(Github page)</li>
+              </ul>
+
+              <p>
+                It has six sections of this portfolio, which are
+                <em>home</em> - contains my introduction and contact information,
+                <em>about</em> - describes myself,
+                <em>skills</em> - has all the skills/languages that I know, and how familiar with it,
+                <em>experience</em> - the company I worked for and all the duty/task I have done for these companies,
+                <em>project</em> - outside project that I have done,
+                <em>contact</em> - social media link and contact information.
+              </p>
+
+              <div style="margin-bottom: 10px;">
+                <a href="https://jialeimei.github.io/jialeis-page/#/" style="color: #e5e5e6da; text-decoration: none; ">
+                  * Link: https://jialeimei.github.io/jialeis-page/#/</a>
+              </div>
+
+              The software/language I used
+              <ul class="work__list " >
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/vue/OtherPortfolio.gif" alt="project" />
+            </div>
+          </div>
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Stock Trader Application</em></h3>
+              <p>
+                A base stock trader application built with Vue.js with
+              </p>
+              <ul style=" list-style-position: inside; list-style-type: circle;">
+                <li>Animation(transition)</li>
+                <li>UI Framework(Quasar)</li>
+                <li>Components</li>
+                <li>State management(Vuex)</li>
+                <li>Routing(Vue-router)</li>
+                <li>Http request(Vue-resource)</li>
+              </ul>
+
+              <p>
+                On this stock trader app, we have a sharing heading displaying navigation which are
+                <em>home</em> - stating the status of your portfolio-funds,
+                <em>portfolio</em> - the stock you have,
+                <em>stock</em> - the stock market for trade.
+                <em>End Day button</em> - for randomized the stock price, that the buy and sell do make profit, or lose money.
+                The heading also have the opinion for connecting the backend with
+                <em>save data button</em> - save your funds, stock to the server and
+                <em>load data button</em> - load funds, stock from server prevent data lost from reloading page.
+              </p>
+
+              The software/language I used
+              <ul class="work__list " >
+                <li>Vue</li>
+                <li>Quasar</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/vue/vueStock.gif" alt="project" />
+            </div>
+          </div>
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Quote Application</em></h3>
+              <p>
+                A very basic quote add and delete application built with Vue.js with quasar framework.
+              </p>
+              <p>
+                We start with a quote, and then we can add a new quote like in grid, so once we add it, we get 2 of 10 and the quote is added. Now if I add a couple of other quotes here until we reach 10 quotes there, when try to add the 11th one, I get an error that I should first delete some quotes so that we're not getting too crowded here. Well I can delete quotes by simply clicking on them, and then you see it updates up there, and I can start adding new ones again.
+              </p>
+
+              The software/language I used
+              <ul class="work__list " >
+                <li>Vue</li>
+                <li>Quasar</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/vue/vueQuote.gif" alt="project" />
+            </div>
+          </div>
+
+          <div class="proj_tick">
+            <div class="tick_info">
+              <h3><em>Kill Monster Game Application</em></h3>
+              <p>
+                A very basic little game built with Vue.js with quasar framework.
+              </p>
+              <p>
+                We fight against a monster and once ‘start new game’ button been clicked, we got the ability to ‘attack’, to make a ‘special attack’, to ‘heal’ or to ‘give up’. If I attack, I do a random amount of damage logged down there, and I also take some damage as the monster has a chance to attack me. I can also launch a special attack and if I take too much damage, of course, I can heal up here, you can see that the monster still attacks me but overall, I should gain some health at least. And if I get a feeling this all is not ending well, I can always give up and therefore start a new game. Finally either I lose or win, the message alert in window, and the page render back to default.
+              </p>
+
+              The software/language I used
+              <ul class="work__list " >
+                <li>Vue</li>
+                <li>Quasar</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+
+            </div>
+
+            <div style="text-align: end;margin:auto 0">
+              <img class="project-image" style="width: 550px" src="images/vue/vueGame.gif" alt="project" />
+            </div>
+          </div>
+
+        </div>
+
+        <div id="html-css" class="tabcontent">
+          <h3 class="tabTitle">Other</h3>
+          <p style="margin: 2em;">Project built with HTML, CSS, Javascript & other language.</p>
+
+          <div class="gird-wrapper">
             <div>
-               
-                <img class="project-image" style="width: 600px; height: 400px" src="images/Nike (1).png" alt="project" />
+              <img class="project-image" src="images/other/12.gif" alt="project" />
             </div>
-            <div">
-               
-              <img class="project-image" style="width: 500px; height: 400px" src="images/netflix.png" alt="project" />
+            <div>
+              <img class="project-image" src="images/other/7.gif" alt="project" />
             </div>
+            <div>
+              <img class="project-image" src="images/other/10.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/2.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/8.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/3.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/6.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/5.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/4.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/11.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/9.gif" alt="project" />
+            </div>
+            <div>
+              <img class="project-image" src="images/other/1.gif" alt="project" />
+            </div>
+          </div>
         </div>
       </div>
-
       
     </section>
 
@@ -262,7 +546,7 @@
             <p>
               Hi, I'm a Front-End Developer located in America. I have a serious passion for building state-of-the-art, easy to use, user-friendly websites.</p>
             <p>
-              Well-organised person, problem solver, independent employee with high attentation to detail. Fan fo outdoor activities, TV series and games. </p>
+              Well-organised person, problem solver, independent employee with high attention to detail. Fan fo outdoor activities, TV series and games. </p>
              <p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.
           
             </p>
@@ -304,31 +588,31 @@
   <footer role="contentinfo" class="footer">
     <div class="row">
       <!-- Update the links to point to your accounts -->
-      <h3 style="margin-top: 10rem">Let's work together...</h1>
+      <h1 style="margin-top: 10rem">Let's work together...</h1>
       <p><em>How do you take your coffee?</em></p>
 
       <ul class="footer__social-links contactItem">
         <li class="footer__social-link-item">
           <a href="https://www.facebook.com/kelly.mei.12/" title="Link to Facebook Profile" class="footer_center">
-            <img src="./images/facebook.svg" class="footer__social-image" alt="Facebook">
+            <img src="images/icon/facebook.svg" class="footer__social-image" alt="Facebook">
             <span style="margin-left: 1rem">Facebook</span>
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://github.com/JialeiMei" title="Link to Github Profile" class="footer_center">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            <img src="images/icon/github.svg" class="footer__social-image" alt="Github">
             <span style="margin-left: 1rem">Github</span>
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://codepen.io/kellymei" title="Link to Codepen Profile" class="footer_center">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+            <img src="images/icon/codepen.svg" class="footer__social-image" alt="Codepen">
             <span style="margin-left: 1rem">Codepen</span>
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/jialeimei/" title="Link to Linkedin Profile" class="footer_center">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="images/icon/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
             <span style="margin-left: 1rem">Linkedin</span>
           </a>
         </li>
@@ -342,9 +626,26 @@
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="images/icon/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
 
 </html>
+
+<script>
+  function openCity(event, cityName) {
+    let i;
+    let tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    event.currentTarget.className += " active";
+  }
+</script>
